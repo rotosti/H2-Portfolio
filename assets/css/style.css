@@ -1,0 +1,153 @@
+body {
+    background: url(../images/backgroundImage.jpeg) no-repeat center center fixed;
+    background-size:cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.side-nav {
+    display: block;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(93, 116, 180, 0.8);
+    padding: 2%;
+}
+
+.inner-side-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    height: 200px;
+    width: 200px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    border-radius: 100%;
+}
+
+.hero-name {
+    display: block;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: 220%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-title {
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 125%;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.hero-location {
+    display: block;
+    margin-bottom: 2%;
+    font-size: 125%;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.nav-bar {
+    display: inline-block;
+    margin-top: 40%;
+    line-height: 1.5;
+    font-size: 110%;
+    text-transform: uppercase;
+}
+
+.nav-item a {
+    display: block;
+    width: 140px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-item a:hover { 
+    color:rgba(255, 255, 255, 1);
+    font-size: 120%;
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 30%;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 10%;
+}
+
+.about-me, .skills, .projects, .contact-me{
+    display:block;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 3%;
+    margin-bottom: 10%;
+}
+
+.about-me h2, .skills h2, .projects h2, .contact-me h2{
+    display: block;
+    font-size: 200%;
+    margin-bottom: 3%;
+}
+
+.about-me p {
+    margin-bottom: 2%;
+    font-size: 130%;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.skills ul li {
+    padding: 20px;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 110%;
+    color: white;
+    background-color: rgba(0,0, 255, 0.4);
+}
+
+.skills ul li:hover {
+    background-color: rgba(0,0, 255, 0.9);
+}
+
+.project-card-main {
+    display: flex;
+    flex-direction: column-reverse;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    box-shadow: inset 0 0 8px gray;
+    min-height: 400px;
+    margin-bottom: 5%;
+}
+
+.project-heading-and-data-main h3 {
+    display: block;
+    font-size: 150%;
+    padding: 20px;
+}
+
+.project-heading-and-data-main p {
+    padding: 0 20px 20px 20px;
+}
+
+
