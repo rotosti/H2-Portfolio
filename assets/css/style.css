@@ -1,14 +1,17 @@
+/* body tag selector, sets the background image and font-family for the whole page */
 body {
     background: url(../images/backgroundImage.jpeg) no-repeat center center fixed;
     background-size:cover;
     font-family: 'Roboto', sans-serif;
 }
 
+/* takes all of the anchor tags and removes decoration */
 a {
     text-decoration: none;
     color: black;
 }
 
+/* builds the side navigation pane, forces the size, and positions the location*/
 .side-nav {
     display: block;
     box-sizing: border-box;
@@ -22,6 +25,7 @@ a {
     padding: 2%;
 }
 
+/* inner portion of the nav bar which controls data flow using flex */
 .inner-side-nav {
     display: flex;
     flex-direction: column;
@@ -29,6 +33,7 @@ a {
     justify-content: center;
 }
 
+/* profile image, adjusts margin for placement */
 .hero {
     height: 200px;
     width: 200px;
@@ -37,6 +42,7 @@ a {
     border-radius: 100%;
 }
 
+/* profile name, adjusts margin for placement and styles text */
 .hero-name {
     display: block;
     margin-top: 4%;
@@ -47,6 +53,7 @@ a {
     color: white;
 }
 
+/* occupation title, adjusts margin for placement and styles text */
 .hero-title {
     display: block;
     margin-top: 2%;
@@ -56,6 +63,7 @@ a {
     color: whitesmoke;
 }
 
+/* residence location, adjusts margin for placement and styles text */
 .hero-location {
     display: block;
     margin-bottom: 2%;
@@ -64,6 +72,7 @@ a {
     color: whitesmoke;
 }
 
+/* navigation menu*/
 .nav-bar {
     display: inline-block;
     margin-top: 40%;
@@ -72,19 +81,21 @@ a {
     text-transform: uppercase;
 }
 
+/* navigation buttons, and styles text*/
 .nav-item a {
     cursor: default;
     display: block;
     width: 140px;
-    text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
 }
 
+/* navigation button effect when us */
 .nav-item a:hover { 
     color:rgba(255, 255, 255, 1);
     font-size: 120%;
 }
 
+/* core data section, sets position and flex */
 .main-block {
     display: flex;
     flex-direction: column;
@@ -96,6 +107,9 @@ a {
     padding: 10%;
 }
 
+/* core sections, all grouped together for same styling, left as individual
+section classes even though styling is the same in the event a section will
+change individual properties */
 .about-me, .skills, .projects, .contact-me{
     display:block;
     background-color: rgba(255, 255, 255, 0.9);
@@ -105,17 +119,20 @@ a {
     margin-bottom: 10%;
 }
 
+/* core section titles, grouped for same styling */
 .about-me h2, .skills h2, .projects h2, .contact-me h2{
     display: block;
     font-size: 200%;
     margin-bottom: 3%;
 }
 
+/* about me detail paragraphs */
 .about-me p {
     margin-bottom: 2%;
     font-size: 130%;
 }
 
+/* skils section list flow set to flex */
 .skills ul {
     display: flex;
     flex-wrap: wrap;
@@ -123,24 +140,28 @@ a {
     justify-content: space-around;
 }
 
+/* styling for the skills */
 .skills ul li {
     padding: 20px;
     margin: 5px;
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: 110%;
-    color: white;
+    color: whitesmoke;
     background-color: rgba(0,0, 255, 0.7);
 }
 
+/* hover effect for the skills */
 .skills ul li:hover {
     background-color: rgba(0,0, 255, 0.9);
 }
 
+/* main part of page, section set to column flex */
 .projects {
     display: flex;
     flex-direction: column;
 }
 
+/* builds the project card and  */
 .project-card {
     box-sizing: border-box;
     position: relative;
@@ -151,6 +172,7 @@ a {
     transition: all 0.5s ease-in-out;
 }
 
+/* sets the sizing for the information portion of the card */
 .project-card-data {
     box-sizing: border-box;
     height: 100%;
@@ -158,22 +180,26 @@ a {
     padding: 30px;
 }
 
+/* project card information heading styling */
 .project-card-data h3 {
     font-size: 140%;
     margin-bottom: 20px;
 }
 
+/* sets the sizing for the project card image */
 .project-card-image {
     box-sizing: border-box;
     height: 100%;
     width: 35%;
 }
 
+/* sets the image to fit its parent container */
 .project-card-image img {
     height: 100%;
     width: 100%;
 }
 
+/* adds hover effect if the user mouses over a project card */
 .project-card:hover {
     width: 97%;
     height: 221px;
@@ -183,10 +209,12 @@ a {
     0 0 8px rgba(0 , 0, 0, 0.6);
 }
 
+/* adjusts positioning on the contact me section */
 .contact-me h2 {
     margin-bottom: 5%;
 }
 
+/* adjusts layout and styling for contact me items */
 .contact-me ul {
     display: flex;
     flex-direction: row;
@@ -195,12 +223,14 @@ a {
     font-size: 120%;
 }
 
+/* adjusts padding so project cards to not look too funky */
 @media screen and (max-width: 1750px) {
     .main-block {
         padding: 8%;
     }
 }
 
+/* adjusts font sizing and padding so project cards can resize */
 @media screen and (max-width: 1500px) {
     .hero-title {
         font-size: 115%;
@@ -215,6 +245,7 @@ a {
     }
 }
 
+/* adjusts side nav bar and main section so project cards can resize */
 @media screen and (max-width: 1350px) {
     .side-nav {
         width: 25%;
@@ -227,6 +258,7 @@ a {
     }
 }
 
+/* adjusts fonts and width of project cards fror  */
 @media screen and (max-width: 1300px) {
     .hero-title {
         font-size: 105%;
@@ -241,7 +273,10 @@ a {
     }
 }
 
+/* complex media query, flips side nav bar to a top nav bar */
 @media screen and (max-width: 1150px) {
+
+    /* adjustments to make side nav bar go to top */
     .side-nav {
         position: relative;
         box-sizing: border-box;
@@ -253,36 +288,42 @@ a {
         padding: 2%;
     }
 
+    /* adjusts width of inner portion of the nav bar */
     .inner-side-nav {
         width: 100%;
     }
 
+    /* changes portrait photo sizing and positioning */
     .hero {
         height: 140px;
         width: 140px;
         margin: 0;
     }
 
+    /* changes margin to pixel values for more percise alignment on a smaller viewport */
     .hero-name {
         margin-top: 10px;
         margin-bottom: 5px;
     }
 
+    /* changes font size and positioning for title */
     .hero-title {
         font-size: 150%;
         margin: 0 0 5px 0;
     }
 
+    /* changes font size and positioning for location */
     .hero-location {
         font-size: 150%;
         margin: 0 0 10px 0;
     }
 
+    /* changes margins on the navigation bar */
     .nav-bar {
         margin: 5px;
-        justify-content: space-between;
     }
 
+    /* orients the navigation buttons inline and justifies */
     .nav-bar ul {
         width: 80vw;
         display: flex;
@@ -293,22 +334,27 @@ a {
         padding: 0;
     }
 
+    /* changes sizing, font size, and color of anchor tags in the nav bar when it is
+    located on the top of the page */
     .nav-item a {
         width: auto;
         font-size: 140%;
         color: white;
     }
 
+    /* elimates the hover effect whent the nav bar is located on top of page */
     .nav-item a:hover {
         font-size: 140%;
     }
 
+    /* positions the main block of data and resizes */
     .main-block {
         left: 0;
         width: 100%;
     }
 }
 
+/* changes width the navigation buttons can take up relative to screen size */
 @media screen and (max-width:900px) {
     .nav-bar ul {
         width: 90vw;
