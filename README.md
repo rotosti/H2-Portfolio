@@ -12,3 +12,5 @@ CSS:
 The CSS styling approach was to give it a minimalist representation but still sleek and interactive.  I used limited amounts of colors and focused on bringing out the beauty of the Chicago skyline.  The design focus was for the page to be responsive.  The majority of margins and paddings are relative until getting to very small screen widths.  @media queries were used to adjust for screen sizing.  The majority of the @media queries adjust font size, padding, margin.  There are additional properties changes with a navigation bar shift and nav links changing. 
 
 The navigation bar eventually had to get shifted to the top of the screen because the side navigation was not properly reflecting the overall design. Once the screen width became much smaller, the navigation links also needed to get some adjustment.
+
+![](/assets/images/HW2-Screen.png)
