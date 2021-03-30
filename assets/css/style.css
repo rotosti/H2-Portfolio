@@ -365,6 +365,7 @@ change individual properties */
     }
 }
 
+/* Adjustments for smaller screen sizes, mostly with font sizing */
 @media screen and (max-width: 660px) {
     .hero-name {
         font-size: 130%;
@@ -378,6 +379,7 @@ change individual properties */
         font-size: 115%;
     }
 
+    /* changing nav bar width to get more space between buttons */
     .nav-bar ul {
         width: 90vw;
         margin-top: 20px;
@@ -391,24 +393,29 @@ change individual properties */
         padding: 2%
     }
 
+    /* extending card size */
     .project-card {
         width: 98%;
     }
 
+    /* changing project card lay out slightly to fit screen size */
     .project-card-data {
         padding: 10px;
         width: 50%;
     }
 
+    /* margin adjustments for position */
     .project-card-data h3 {
         margin: 8px 0px 5px 0px;
     }
 
+    /* adjusting project card image half */
     .project-card-image {
         width: 50%;
     }
 }
 
+/* more adjustments for smaller screens */
 @media screen and (max-width: 585px) {
     .about-me h2, .skills h2, .projects h2, .contact-me h2 {
         font-size: 150%;
@@ -424,6 +431,7 @@ change individual properties */
     }
 }
 
+/* switch to vertical stack of navigation bar to maintain readability */
 @media screen and (max-width: 500px) {
     .nav-bar ul{
         width: 97vw;
@@ -432,6 +440,7 @@ change individual properties */
         align-items: center;
     }
 
+    /* adjustment of project card data to fit project data images better */
     .project-card-data {
         width: 40%;
     }
@@ -445,6 +454,7 @@ change individual properties */
         font-size: 74%; 
     }
 
+    /* project data image adjustment to fill card */
     .project-card-image {
         width: 60%;
     }
@@ -454,6 +464,7 @@ change individual properties */
     }
 }
 
+/* font and width adjustments on smallest viewport level */
 @media screen and (max-width: 375px) {
     .nav-item a {
         font-size: 100%;
