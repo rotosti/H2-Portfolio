@@ -427,22 +427,36 @@ change individual properties */
 @media screen and (max-width: 500px) {
     .nav-bar ul{
         width: 97vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-card-data {
+        width: 40%;
+    }
+
+    .project-card-data h3 {
+        font-weight: bold;
+        font-size: 95%;
     }
 
     .project-card-data p {
-        font-size: 95%; 
+        font-size: 74%; 
+    }
+
+    .project-card-image {
+        width: 60%;
     }
 
     .contact-me ul {
-        font-size: 105%;
+        font-size: 90%;
     }
 }
 
 @media screen and (max-width: 375px) {
-    .nav-bar ul {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .nav-item a {
+        font-size: 100%;
     }
 
     .project-card {
@@ -453,20 +467,11 @@ change individual properties */
         width: 35%;
     }
 
-    .project-card-data h3 {
-        font-weight: bold;
-        font-size: 95%;
-    }
-
     .project-card-data p {
         font-size: 67%;
     }
 
     .project-card-image {
         width: 65%;
-    }
-
-    .contact-me ul {
-        font-size: 90%;
     }
 }
