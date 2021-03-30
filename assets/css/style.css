@@ -194,3 +194,123 @@ a {
     justify-content: space-around;
     font-size: 120%;
 }
+
+@media screen and (max-width: 1750px) {
+    .main-block {
+        padding: 8%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .hero-title {
+        font-size: 115%;
+    }
+
+    .hero-location {
+        font-size: 115%;
+    }
+    
+    .main-block {
+        padding: 6%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .side-nav {
+        width: 25%;
+    }
+
+    .main-block {
+        width: 75%;
+        left: 25%;
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .hero-title {
+        font-size: 105%;
+    }
+
+    .hero-location {
+        font-size: 105%;
+    }
+
+    .project-card {
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .side-nav {
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        right: 0;
+        height: auto;
+        width: 100%;
+        padding: 2%;
+    }
+
+    .inner-side-nav {
+        width: 100%;
+    }
+
+    .hero {
+        height: 140px;
+        width: 140px;
+        margin: 0;
+    }
+
+    .hero-name {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .hero-title {
+        font-size: 150%;
+        margin: 0 0 5px 0;
+    }
+
+    .hero-location {
+        font-size: 150%;
+        margin: 0 0 10px 0;
+    }
+
+    .nav-bar {
+        margin: 5px;
+        justify-content: space-between;
+    }
+
+    .nav-bar ul {
+        width: 80vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        margin: 40px 0 0 0;
+        padding: 0;
+    }
+
+    .nav-item a {
+        width: auto;
+        font-size: 140%;
+        color: white;
+    }
+
+    .nav-item a:hover {
+        font-size: 140%;
+    }
+
+    .main-block {
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .nav-bar ul {
+        width: 90vw;
+    }
+}
