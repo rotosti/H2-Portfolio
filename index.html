@@ -6,16 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Links a google font for use, Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Tom Does The Code</title>
 </head>
+
+<!-- body of web page -->
 <body>
+
+    <!-- Side nav section on full viewports, top nav on mobile viewports -->
     <div class="side-nav">
         <aside class="inner-side-nav">  
+            <!-- Profile image, name, title, location -->
             <img class="hero" src="./assets/images/MyPhoto.jpg" alt="Tom Siemion's photo.">
             <h1 class="hero-name">Tom Siemion</h1>
             <pre class="hero-title">Full-Stack Software Developer</pre>
             <pre class="hero-location">Chicago, IL</pre>
+            <!-- Navigation menu -->
             <nav class="nav-bar">
                 <ul>
                     <li class="nav-item"><a href="#about-me">About Me</a></li>
@@ -24,10 +31,13 @@
                     <li class="nav-item"><a href="#contact-me">Contact Me</a></li>
                 </ul>
             </nav>
+            <!-- END NAVIGATION MENU -->
         </aside>
     </div>
-    
+    <!-- END NAV BAR -->
+    <!-- Body of the website -->
     <main class="main-block">
+        <!-- About me section -->
         <section id="about-me" class="about-me">
             <h2>About Me</h2>
             <p>
@@ -45,6 +55,7 @@
                quidem libero omnis similique doloribus nesciunt, incidunt sapiente nam cum. Commodi, aliquid.
             </p>
         </section>
+        <!-- Skills section -->
         <section id="skills" class="skills">
             <h2>Skills</h2>
             <ul>
@@ -63,10 +74,15 @@
                 <li>Windows</li>
             </ul>
         </section>
+        <!-- Project section -->
         <section id="projects" class="projects">
+            <!-- Project section title -->
             <h2>Projects and Work (Coming Soon)</h2>
+            <!-- Each project card is encapsulated in an anchor tag, so the entire card is clickable -->
             <a href="https://github.com/rotosti" target="_blank">
+                <!-- Each card is an article tag, and contains a summary of the project and an image -->
                 <article class="project-card">
+                    <!-- Project card title and summary -->
                     <div class="project-card-data">
                         <h3>Gone Fishing</h3>
                         <p>
@@ -75,11 +91,14 @@
                         repudiandae, doloremque eum iste necessitatibus nesciunt libero.
                         </p>
                     </div>
+                    <!-- Project card image -->
                     <div class="project-card-image">
                         <img src="./assets/images/placeholderImage1.jpeg" alt="A man fishing on a lake.">
                     </div>
                 </article>
             </a>
+            <!-- END 1 CARD -->
+            <!-- Cards have the image swap sides every row -->
             <a href="https://github.com/rotosti" target="_blank">
                 <article class="project-card">
                     <div class="project-card-image">
@@ -141,6 +160,7 @@
                 </article>
             </a>
         </section>
+        <!-- Contact me section with email, phone, and LinkedIn profile link -->
         <section id="contact-me" class="contact-me">
             <h2>Contact Me</h2>
             <ul>
