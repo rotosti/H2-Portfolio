@@ -445,6 +445,27 @@ change individual properties */
         align-items: center;
     }
 
+    .project-card {
+        width: 99%;
+    }
+
+    .project-card-data {
+        width: 35%;
+    }
+
+    .project-card-data h3 {
+        font-weight: bold;
+        font-size: 95%;
+    }
+
+    .project-card-data p {
+        font-size: 67%;
+    }
+
+    .project-card-image {
+        width: 65%;
+    }
+
     .contact-me ul {
         font-size: 90%;
     }
