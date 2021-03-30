@@ -172,6 +172,10 @@ change individual properties */
     transition: all 0.5s ease-in-out;
 }
 
+.image-right {
+    float: right;
+}
+
 /* sets the sizing for the information portion of the card */
 .project-card-data {
     box-sizing: border-box;
@@ -358,5 +362,90 @@ change individual properties */
 @media screen and (max-width:900px) {
     .nav-bar ul {
         width: 90vw;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .hero-name {
+        font-size: 130%;
+    }
+
+    .hero-title {
+        font-size: 115%;
+    }
+
+    .hero-location {
+        font-size: 115%;
+    }
+
+    .nav-bar ul {
+        width: 90vw;
+        margin-top: 20px;
+    }
+
+    .nav-item a {
+        font-size: 110%;
+    }
+
+    .main-block {
+        padding: 2%
+    }
+
+    .project-card {
+        width: 98%;
+    }
+
+    .project-card-data {
+        padding: 10px;
+        width: 50%;
+    }
+
+    .project-card-data h3 {
+        margin: 8px 0px 5px 0px;
+    }
+
+    .project-card-image {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .about-me h2, .skills h2, .projects h2, .contact-me h2 {
+        font-size: 150%;
+        font-weight: bold;
+    }
+
+    .about-me p {
+        font-size: 105%;
+    }
+    
+    .project-card-data {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-bar ul{
+        width: 97vw;
+    }
+
+    .project-card-data p {
+        font-size: 95%; 
+    }
+
+    .contact-me ul {
+        font-size: 105%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .nav-bar ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-me ul {
+        font-size: 90%;
     }
 }
