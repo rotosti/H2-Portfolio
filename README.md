@@ -1,7 +1,7 @@
-# H2-Portfolio
+#Portfolio
 
 Author: Tomasz Siemion
-Project: H2-Portfolio
+Project: Portfolio
 LINK: https://rotosti.github.io/H2-Portfolio/
 REPO LINK: https://github.com/rotosti/H2-Portfolio
 
