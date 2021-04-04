@@ -2,8 +2,8 @@
 
 Author: Tomasz Siemion
 Project: Portfolio
-LINK: https://rotosti.github.io/H2-Portfolio/
-REPO LINK: https://github.com/rotosti/H2-Portfolio
+LINK: https://rotosti.github.io/Portfolio/
+REPO LINK: https://github.com/rotosti/Portfolio
 
 HTML:
 For the HTML I built my structure into 2 core sections, the side navigation and main body.  The side navigation has link functionality to navigate the single page webpage.  The links to the sections have a hover effect to grow and change opacity showing the user that is the selection they are on.  The core of the main section of text is the project section.  This was put into "cards" featuring a picture and information about the project.  The cards have interactivity with a hover and are encapsulated in anchor tags making the entire "card" clickable.
